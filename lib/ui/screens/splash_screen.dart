@@ -51,5 +51,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-
-/// after 51.6 min

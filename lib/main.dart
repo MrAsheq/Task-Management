@@ -15,9 +15,9 @@ void main() {
 // git push origin main
 
 // one line to update
-///   git add . && git commit -m "your commit message" && git push origin main
+///   git add .; git commit -m "Updated"; git push origin main
 
 
 
 /// sdk version showing
-/// fvm- flutter version managemdart daent
+/// fvm- flutter version manage
