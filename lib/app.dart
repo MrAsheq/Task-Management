@@ -15,6 +15,14 @@ class TaskManagerApp extends StatelessWidget {
           brightness: Brightness.light,
         ),
 
+        textTheme: TextTheme(
+          titleLarge: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+
         inputDecorationTheme: InputDecorationTheme(
           hintStyle: TextStyle(color: Colors.grey),
           fillColor: Colors.white,
@@ -22,20 +30,26 @@ class TaskManagerApp extends StatelessWidget {
           contentPadding: EdgeInsets.symmetric(horizontal: 15),
           border: OutlineInputBorder(borderSide: BorderSide.none),
           enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
-          errorBorder: OutlineInputBorder(borderSide: BorderSide.none)
+          errorBorder: OutlineInputBorder(borderSide: BorderSide.none),
         ),
+
         filledButtonTheme: FilledButtonThemeData(
           style: FilledButton.styleFrom(
             backgroundColor: Colors.yellow,
-            foregroundColor: Colors.black
-          )
+            foregroundColor: Colors.black,
+            fixedSize: Size.fromWidth(double.maxFinite),
+            padding: EdgeInsets.symmetric(vertical: 12),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(100),
+            ),
+          ),
         ),
+
         textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(
-            foregroundColor: Colors.yellow
-          )
+          style: TextButton.styleFrom(foregroundColor: Colors.yellow),
         ),
-        useMaterial3: true
+
+        useMaterial3: true,
       ),
     );
   }
